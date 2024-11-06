@@ -1,0 +1,421 @@
+html {
+    scroll-behavior: smooth;
+    /* height: 1000vh; */
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar-all {
+    background-color: #f4ca16;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 2;
+}
+
+.nav-link {
+    font-family: "Mukta Malar", sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+.hero-section {
+    background-image: url(../img/agis-cantik-sedunia.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 40rem;
+    background-size: 100% 100%;
+    transform: translateY(-60px);
+    z-index: 1;
+}
+
+.hero-text {
+    padding-top: 120px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+}
+
+.hero-text h1,
+.hero-text h4 {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -1px;
+}
+
+.CN {
+    color: #f4ca16;
+}
+
+.hero-image {
+    margin-top: 130px;
+    width: 300px;
+    height: 370px;
+    border: 0px solid red;
+    border-radius: 200px 200px 0 0;
+}
+
+.hero-circle {
+    width: 210px;
+    height: 210px;
+    background-color: #f4ca16;
+    border-radius: 50%;
+    margin-top: 345px;
+    margin-left: -100px;
+    z-index: 3;
+    position: absolute;
+}
+
+.lok {
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.fa-location-dot {
+    margin-left: -12px;
+}
+
+.detail-btn {
+    background-color: #f4ca16;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.detail-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-info {
+    background-color: #a6bf60;
+    /* margin: auto; */
+    margin-top: -60px;
+}
+
+.info-card-detail {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f4ca16;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.card-icon {
+    font-size: 2.4rem;
+    margin-top: 28px;
+}
+
+.card-info-title,
+.card-info-desc {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.card-info-title {
+    padding-top: 0.7rem;
+}
+
+.card-info-desc {
+    font-size: 1.4rem;
+    color: #f4ca16;
+}
+
+.main-info {
+    background-image: url(../img/main-info.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 1412px; /* Sesuaikan nilai ini dengan kebutuhan */
+    /* object-fit: cover; */
+    /* width: 100%; */
+    /* height: 80rem; */
+    /* background-size: 1512px 1685px; */
+    padding-top: 9rem;
+}
+
+.main-image {
+    width: 450px;
+    height: 350px;
+    /* margin-top: 8rem; */
+    /* margin-left: 5rem; */
+    border: 2px solid #f4ca16;
+}
+
+/* .main-each-content {
+  padding-top: 12rem;
+  margin-top: 8rem;
+} */
+
+.main-title span,
+.gallery-title,
+.teacher-title,
+.teacher-title span {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+}
+
+.smk-cn {
+    color: #f4ca16;
+    text-shadow: 1px 1px 22px #000;
+}
+
+.main-sec-title {
+    text-shadow: 1px 1px 22px #000;
+}
+
+.partnership {
+    background-color: #a6bf60;
+    padding-top: 2.4rem;
+    padding-bottom: 5.6rem;
+}
+
+.partnership-title {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.6rem;
+}
+
+.scroller {
+    max-width: 1000px;
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.scroller__inner img {
+    width: 150px; /* Sesuaikan dengan kebutuhan */
+    height: auto; /* Mempertahankan rasio gambar */
+    object-fit: contain; /* Menyesuaikan gambar agar sesuai dengan kontainernya tanpa distorsi */
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    /* -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  ); */
+    /* mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); */
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 30s)
+        var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+    --_animation-duration: 12s;
+}
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 30s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+.gallery {
+    background-color: #657e3a;
+    padding-top: 2.4rem;
+    padding-bottom: 4rem;
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.gallery-slider img {
+    width: 300px; /* Sesuaikan dengan kebutuhan */
+    height: auto; /* Mempertahankan rasio gambar */
+    object-fit: contain; /* Menyesuaikan gambar agar sesuai dengan kontainernya tanpa distorsi */
+}
+
+.gallery-slider .slick-slide {
+    opacity: 0.5; /* Mengatur opasitas slide secara default */
+    transform: scale(
+        0.8
+    ); /* Mengatur ukuran lebih kecil untuk slide yang tidak di tengah */
+    transition: all 0.3s ease; /* Transisi untuk animasi halus */
+}
+
+.gallery-slider .slick-center {
+    opacity: 1; /* Opasitas penuh untuk slide tengah */
+    transform: scale(1); /* Ukuran normal (penuh) untuk slide tengah */
+}
+
+.teacher {
+    background-image: url(../img/guru-CN.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px; /* Sesuaikan nilai ini dengan kebutuhan */
+}
+
+.teacher-slider .slick-slide {
+    margin: 0 10px;
+}
+
+.card-teacher {
+    width: 250px;
+}
+
+.card-teacher img {
+    width: inherit;
+    height: auto;
+    border: none;
+    border-radius: 150px 150px 0 0;
+}
+
+.teacher-body {
+    background-color: #f4ca16;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.teacher-name,
+.teacher-position {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    color: #000;
+}
+
+.teacher-position {
+    font-size: 0.8rem;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f4ca16;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-img img {
+    width: 80px;
+    height: auto;
+}
+
+/* .contact-info {
+  margin-left: 42px;
+} */
+
+.footer-logo-title {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding-top: 12px;
+}
+
+.footer-title {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 12px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-address {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.page-link li {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6a6363;
+    font-size: 14px;
+}
+
+.page-link a {
+    text-decoration: none;
+    margin: 0;
+    color: #6a6363;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-link a {
+    text-decoration: none;
+    margin: 0;
+    color: #6a6363;
+    /* display: block; */
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    /* margin-left: 4px; */
+}
+
+.page-link a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .slick-prev {
+        margin-left: 16px;
+    }
+
+    .slick-next {
+        margin-right: 16px;
+    }
+}

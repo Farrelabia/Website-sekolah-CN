@@ -1,0 +1,199 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+/* Navbar Styles */
+.navbar-all {
+  background-color: #f4ca16;
+  border-radius: 0px 0px 60px 60px;
+  z-index: 2;
+}
+
+.nav-link {
+  font-family: "Mukta Malar", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+/* News Section Styles */
+.news-section {
+  margin: 36px 0;
+  width: 100%; /* Ensure section is full width */
+}
+
+.news-item {
+  position: relative;
+  background-color: #F4CA16;
+  /* padding: 20px; */
+  margin-bottom: 40px;
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.news-img {
+  order: 2;
+  flex: 0 0 300px; /* Fixed width for the image container */
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.news-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; 
+  /* position: absolute; */
+}
+
+.news-text {
+  font-family: "Mukta Malar", sans-serif !important;
+  order: 1;
+  flex: 1;
+  text-align: left; /* Align all text to the left */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove extra margins */
+  display: flex;
+  flex-direction: column; /* Stack title, date, and text vertically */
+  justify-content: flex-start; /* Align everything to the top */
+  height: 200px; /* Define a fixed height for the text container */
+}
+
+.news-text h4 {
+  margin: 0; /* Remove margin around title */
+  font-family: "Mukta Malar", sans-serif !important;
+  font-size: 1.2em; /* Slightly smaller font size to match the compact look */
+  font-weight: bold; /* Ensure the title is bold */
+  color: #333;
+}
+
+.news-text .date {
+  margin: 5px 0 10px 0; /* Small margin below the date */
+  font-size: 1em;
+  color: #999; /* Light color for the date */
+}
+
+.news-text p {
+  font-family: "Mukta Malar", sans-serif !important;
+  margin: 0; /* No extra margin around the text */
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4; /* Slightly tighter line spacing */
+  overflow: hidden; /* Hide overflow if content exceeds height */
+}
+
+.read-more-btn {
+  font-family: "Mukta Malar", sans-serif !important;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Add more padding for size */
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px; /* Less rounded corners */
+  position: absolute; /* To make the button stick to the bottom */
+  bottom: 20px; /* Push it to the bottom */
+  left: 20px; /* Stick to the left */
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #f4ca16;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-img img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-logo-title {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.6rem;
+  padding-top: 12px;
+}
+
+.footer-title {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 12px;
+  margin-right: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-address {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.page-link li {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #6A6363;
+  font-size: 14px;
+}
+
+.page-link a {
+  text-decoration: none;
+  margin: 0;
+  color: #6A6363;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-link a {
+  text-decoration: none;
+  margin: 0;
+  color: #6A6363;
+  font-size: 20px;
+}
+
+.page-link a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}

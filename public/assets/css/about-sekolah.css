@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+    /* height: 250vh; */
+}
+
+body {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    /* transform: translateY(-60px); */
+    z-index: 1;
+}
+
+.navbar-all {
+    background-color: #f4ca16;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 2;
+}
+
+.nav-link {
+    font-family: "Mukta Malar", sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+.structure {
+    padding-top: 3rem;
+}
+
+.stucture-text h1 {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -1px;
+    /* margin-left: 450px; */
+    /* margin-right: -500px; */
+    margin-top: 80px;
+}
+
+.structure-text h4 {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -1px;
+    /* margin-left: 400px; */
+    /* margin-top: 100px; */
+}
+
+.img-struktur {
+    width: 450px;
+    height: 230px;
+    display: block;
+}
+
+.sejarah {
+    background-color: #f4ca16;
+    width: 1000px;
+    height: 400px;
+    border-radius: 2%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 7rem;
+}
+
+.sejarah-title {
+    /* margin-left: 50px; */
+    padding-top: 30px;
+    margin-left: 24px;
+}
+
+.sejarah-desc {
+    padding-top: 30px;
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f4ca16;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-img img {
+    width: 80px;
+    height: auto;
+}
+
+/* .contact-info {
+  margin-left: 42px;
+} */
+
+.footer-logo-title {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding-top: 12px;
+}
+
+.footer-title {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 12px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-address {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.page-link li {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6a6363;
+    font-size: 14px;
+}
+
+.page-link a {
+    text-decoration: none;
+    margin: 0;
+    color: #6a6363;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-link a {
+    text-decoration: none;
+    margin: 0;
+    color: #6a6363;
+    /* display: block; */
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    /* margin-left: 4px; */
+}
+
+.page-link a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
